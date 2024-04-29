@@ -2,6 +2,8 @@
 
 let pic = document.querySelector('#pic');
 let sweets = ["cin2.webp", "pan3.jpg"];
+let spicys = ["ramen.webp", "wings.jpg"];
+let mexicans = ["tac.jpg", "tam.jpg"];
 // Make sure to declare your HTML elements as variables! 
 
 // Submit Button 
@@ -16,5 +18,21 @@ if (user === "Sweet"){
 pic.appendChild(image);
     });
 }
+if (user === "Spicy"){
+    spicys.forEach(function(spicys){
+    let image = document.createElement("img");
+    image.src = spicys;
+pic.appendChild(image);
+    });
+}
+
+if (user === "Mexican"){
+    mexicans.forEach(function(mexicans){
+    let image = document.createElement("img");
+    image.src = mexicans;
+pic.appendChild(image);
+    });
+}
+
 });
 
