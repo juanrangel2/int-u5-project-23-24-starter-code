@@ -11,14 +11,14 @@ let submitButton = document.querySelector("button");
 submitButton.addEventListener("click", function() {
 
 let user = document.querySelector("input").value;
-if (user === "Sweet"){
+if (user === "Sweet" || user === "sweet"){
     sweets.forEach(function(sweets){
     let image = document.createElement("img");
     image.src = sweets;
 pic.appendChild(image);
     });
 }
-if (user === "Spicy"){
+if (user === "Spicy" || user === "spicy"){
     spicys.forEach(function(spicys){
     let image = document.createElement("img");
     image.src = spicys;
@@ -26,7 +26,7 @@ pic.appendChild(image);
     });
 }
 
-if (user === "Mexican"){
+if (user === "Mexican" || user === "mexican"){
     mexicans.forEach(function(mexicans){
     let image = document.createElement("img");
     image.src = mexicans;
